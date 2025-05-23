@@ -31,7 +31,7 @@ const Navbar = () => {
             <nav>
                 <div className={styles.container}>
                     <div className={styles.navarDiv}>
-                        <a className={styles.logo}>
+                        <a href='/' className={styles.logo}>
                             <img src="https://preview.colorlib.com/theme/estore/assets/img/logo/logo.png.webp" alt="" />
                         </a>
                         <div className={styles.pages}>
