@@ -1,0 +1,161 @@
+.productSection {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.container {
+    width: 1400px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.productTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.productTitle h2 {
+    font-weight: 700;
+    font-size: 48px;
+    font-family: "Playfair Display", serif;
+}
+
+.formBox {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    input {
+        padding: 10px 15px;
+        outline: 0;
+    }
+}
+
+.sortBox {
+    display: flex;
+    gap: 10px;
+
+    button {
+        padding: 11px;
+        border: 0;
+    }
+}
+
+.sortBox button:active {
+    background-color: #848484;
+}
+
+.productBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.productImg {
+    width: 100%;
+    border-radius: 0 !important;
+
+    img {
+        width: 100%;
+        object-fit: contain;
+        height: auto;
+    }
+}
+
+.productInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+
+    h4 {
+        font-weight: 500;
+        font-size: 16px;
+        font-family: "Playfair Display", serif;
+    }
+}
+
+.productPrice {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 18px;
+
+    p {
+        color: rgb(33, 37, 41);
+    }
+
+    span {
+        color: rgb(255, 0, 60);
+        text-decoration: line-through;
+    }
+
+}
+
+.productButton {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.productButton button {
+    width: 100%;
+    padding: 10px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    border: 0;
+}
+
+
+@media screen and (max-width: 576px) {
+    .productTitle {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .formBox {
+        flex-direction: column;
+        gap: 10px;
+
+        input {
+            width: 100%;
+        }
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+}

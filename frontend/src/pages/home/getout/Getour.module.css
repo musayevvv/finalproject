@@ -1,0 +1,146 @@
+.getoutSection {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: url(https://preview.colorlib.com/theme/estore/assets/img/collection/latest-offer.png.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 90px;
+    position: relative;
+    height: 400px;
+
+    img {
+        position: absolute;
+        left: 50px;
+        top: 20px;
+    }
+}
+
+.container {
+    width: 1400px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.getoutDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.getourLeft {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        font-weight: 700;
+        font-size: 45px;
+        font-family: "Playfair Display", serif;
+        line-height: 58.5px;
+    }
+
+    p {
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: rgb(55, 59, 65);
+    }
+}
+
+.getourRight {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    input {
+        width: 400px;
+        border: 0;
+        outline: 0;
+        padding: 22px;
+        border-radius: 30px;
+        font-size: 15px;
+    }
+
+    button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border: 0;
+        outline: 0;
+        padding: 22px;
+        border-radius: 30px;
+        background-color: #2577FD;
+        color: white;
+        font-weight: 300;
+        font-size: 15px;
+        font-family: 'Poppins';
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .getoutSection {
+        padding: 90px 0;
+        margin-bottom: 20px;
+
+        img {
+            display: none;
+        }
+    }
+
+    .getoutDiv {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .getourRight {
+        input {
+            width: 300px;
+        }
+    }
+
+    .getourLeft {
+        text-align: center;
+
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .getourRight {
+        input {
+            width: 250px;
+        }
+    }
+
+    .getourLeft {
+        text-align: center;
+
+        h2 {
+            font-size: 25px;
+            line-height: 30px;
+        }
+
+        P {
+            font-size: 15px;
+        }
+    }
+
+}

@@ -1,0 +1,125 @@
+.categorySection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.container {
+    width: 1400px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categoryDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categoryTitle {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    h2 {
+        font-weight: 700;
+        font-size: 48px;
+        font-family: "Playfair Display", serif;
+    }
+}
+
+.categoryBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.firstItem,
+.secondItem,
+.thirdItem {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 32%;
+    height: 350px;
+    padding: 30px;
+}
+
+.intoItem {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+
+    h2 {
+        font-weight: 700;
+        font-size: 48px;
+        font-family: "Playfair Display", serif;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 18px;
+        font-family: "Playfair Display", serif;
+        background-color: #FFCE25;
+        color: white;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    span {
+        font-weight: 600;
+        font-size: 30px;
+        font-family: "Yellowtail", cursive;
+        color: rgb(0, 113, 254);
+    }
+}
+
+
+
+.firstItem {
+    background-image: url(https://preview.colorlib.com/theme/estore/assets/img/categori/cat1.jpg.webp);
+}
+
+.secondItem {
+    background-image: url(https://preview.colorlib.com/theme/estore/assets/img/categori/cat2.jpg.webp);
+}
+
+.thirdItem {
+    background-image: url(https://preview.colorlib.com/theme/estore/assets/img/categori/cat3.jpg.webp);
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .categoryTitle h2 {
+        font-size: 30px;
+    }
+
+    .categoryBox {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .firstItem,
+    .secondItem,
+    .thirdItem {
+        width: 90%;
+    }
+
+    .container{
+        padding: 0 10px;
+    }
+}

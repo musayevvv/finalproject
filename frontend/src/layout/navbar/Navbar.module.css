@@ -1,0 +1,213 @@
+.navSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 111;
+}
+
+header,
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    background-color: black;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 21px;
+    font-family: 'Poppins';
+}
+
+.container {
+    width: 100%;
+    max-width: 1500px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerDiv,
+.navarDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+
+    p {
+        line-height: 40px;
+    }
+
+    span {
+        margin-left: 20px;
+    }
+}
+
+.headerRight {
+    display: flex;
+    gap: 10px;
+    color: white;
+
+    a {
+        color: white;
+        text-decoration: none;
+        padding: 20px 15px;
+    }
+}
+
+
+nav {
+    padding: 20px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.pages {
+    display: flex;
+    align-items: center;
+
+    a {
+        font-weight: 400;
+        font-size: 14px;
+        font-family: 'Poppins';
+        color: black;
+        line-height: 21px;
+        text-decoration: none;
+        padding: 20px 18px;
+    }
+}
+
+.latest {
+    position: relative;
+}
+
+.hot {
+    position: absolute;
+    background-color: red;
+    border-radius: 8px;
+    color: white;
+    font-size: 10px;
+    padding: 0 9px;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    bottom: 38px;
+    right: -10px;
+
+}
+
+.navRight {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: 'Poppins';
+
+    button {
+        font-weight: 400;
+        color: white;
+        background-color: #2577FD;
+        font-size: 19px;
+        padding: 15px 40px;
+        border-radius: 40px;
+        border: 0;
+
+    }
+}
+
+.inputBox {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    input {
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        padding: 12px 15px;
+        outline: none;
+    }
+
+    svg {
+        position: absolute;
+        right: 12px;
+        font-weight: lighter;
+        color: #616161;
+    }
+}
+
+.iconBox {
+    padding: 15px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    svg {
+        color: #616161;
+        width: 18px;
+        height: 18px;
+    }
+}
+
+.count {
+    position: absolute;
+    background-color: #00B1FF;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    top: -5px;
+    right: -8px;
+}
+
+
+@media (max-width: 576px) {
+    header {
+        display: none;
+    }
+
+    .pages {
+        display: none;
+    }
+
+    .navRight button {
+        display: none;
+    }
+
+    .inputBox {
+        display: none;
+    }
+
+    .iconBox {
+        padding: 10px;
+    }
+
+    .count {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+        top: -6px;
+        right: -8px;
+    }
+}
